@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Photo Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Caprasimo&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Kapakana:wght@300..400&family=LXGW+Marker+Gothic&family=Michroma&family=Poppins:wght@400;500;600;700&family=Press+Start+2P&family=Roboto+Slab:wght@100..900&family=Roboto:wght@100..900&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" type="module"></script>
+</head>
+<body>
+  <section class="aplication">
+    <article class="tools_up">
+      <button id="out" class="visibility-hidden">
+        <img src="./icons-svg/arrow-left-svgrepo-com.svg" alt="icon exit tool">
+      </button>
+      <button id="download">
+        <img src="./icons-svg/download-svgrepo-com.svg" alt="icon save image">
+      </button>
+    </article>
+    
+    <article class="img" id="container-canvas">
+      <canvas id="canvas" width="350" height="200"></canvas>
+    </article>
+   
+    <article class="tools_down">
+      <div class="tools_down__tools">
+        <button id="folder">
+          <img src="./icons-svg/folder-svgrepo-com.svg" alt="icon folder">
+        </button>
+        <button id="information">
+          <img src="./icons-svg/information-circle-svgrepo-com.svg" alt="icon information">
+        </button>
+        <button id="back" class="button-change-layer">
+          <img src="./icons-svg/arrow-go-back-svgrepo-com.svg" alt="icon go back" class="opacity-midle">
+          <p class="opacity-midle">0</p>
+        </button>
+        <button id="next" class="button-change-layer">
+          <img src="./icons-svg/arrow-go-back-svgrepo-contrary.svg" alt="icon go next" class="opacity-midle">
+          <p class="opacity-midle">0</p>
+        </button>
+      </div>
+      <div class="tools_down__tools down">
+        <div>
+          <button class="color-disabled" disabled="">Color</button>
+          <button class="color-disabled" disabled="">Curves</button>
+          <button class="color-disabled" disabled="">Level</button>
+          <button class="color-disabled" disabled="">Effect</button>
+          <button class="color-disabled" disabled="">Effect II</button>
+          <button class="color-disabled" disabled="">Frame</button>
+          <button class="color-disabled" disabled="">Correction</button>
+          <button class="color-disabled" disabled="">Denoise</button>
+          <button id="draw">Drawing</button>
+          <button id="pixel">Pixel</button>
+          <button class="color-disabled" disabled="">Clon</button>
+          <button class="color-disabled" disabled="">Cut Out</button>
+          <button class="color-disabled" disabled="">Text/Image</button>
+          <button id="crop">Crop</button>
+        </div>
+        <div id="all_tools" class="container-allTools">
+          <button id="button-allTools">
+            <img src="./icons-svg/menu-1-svgrepo-com.svg" alt="icon all tools">
+          </button>
+          <span class="modal-allTools">
+            <button class="color-disabled" disabled="">Color</button>
+            <button class="color-disabled" disabled="">Curves</button>
+            <button class="color-disabled" disabled="">Levels</button>
+            <button class="color-disabled" disabled="">Effect</button>
+            <button class="color-disabled" disabled="">Effect2</button>
+            <button class="color-disabled" disabled="">Frame</button>
+            <button class="color-disabled" disabled="">Correction</button>
+            <button class="color-disabled" disabled="">Denoise</button>
+            <button id="draw">Drawing</button>
+            <button id="pixel">Pixel</button>
+            <button class="color-disabled" disabled="">Clon</button>
+            <button class="color-disabled" disabled="">Cut Out</button>
+            <button class="color-disabled" disabled="">Text/Image</button>
+            <button id="crop">Crop</button>
+          </span>
+        </div>
+      </div>
+    </article>
+  </section>
+  <span id="checkColor"></span>
+</body>
+</html>
